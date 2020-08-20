@@ -1,0 +1,41 @@
+version: 2.1
+
+# Define the jobs we want to run for this project
+jobs:
+  build:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: my-command
+    steps:
+      - checkout
+  test:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: my-command
+
+# Orchestrate our job run sequence
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      - test
+
+
+test:
+  os: windows
+  version: 10
+  details:
+    - name: john smith
+      age: 25
+
+another:
+  fruit:
+    - orange
+    - grape
+      vegetables:
+        - tasty
+        - yum
