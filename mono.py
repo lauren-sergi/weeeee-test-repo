@@ -64,4 +64,4 @@ print(bcolors.ENDC)
 
 print("script run successfully, exiting...")
 
-this will cause some errors oke
+printZ("this will cause some errors oke")
