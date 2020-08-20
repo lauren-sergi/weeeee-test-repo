@@ -63,3 +63,5 @@ inverse_monoalpha_cipher(mapping, word)
 print(bcolors.ENDC)
 
 print("script run successfully, exiting...")
+
+this will cause some errors oke
